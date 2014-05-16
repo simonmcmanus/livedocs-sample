@@ -1,9 +1,10 @@
-
+#LiveDocs Sample
 
 This repository provides an example of how to use LiveDocs, LiveDocs Route loader and LiveDocs middleware together.
 
 
 
+##Background
 
 When building or consuming APIs I often find myself putting together lots of small HTML forms that allow me to GET/PUT/POST data to my api in order to test it.
 On  a recent project one of the requirements was to build an simple API interface in Node. There was already an API in place but the client wanted to make it easier to use by providing better error responses and better documentation. I decided a test harness with inline documentation was a good idea.
@@ -20,6 +21,9 @@ LiveDocs consists of three main components, each component has it’s own read m
 
 
 The three components are:
+
+
+#Components
 
 ## 1.. Test Harness Generator
 
