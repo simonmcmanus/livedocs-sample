@@ -19,7 +19,6 @@ LiveDocs was born.
 
 LiveDocs consists of three main components, each component has it’s own read me.md file which should explain how to use the component, this repository will try to explain how to tie them all together.
 
-
 The three components are:
 
 
@@ -57,7 +56,6 @@ When using the route loader the URLs are modified slightly before being added to
 
 
 
-
 ## 3.. LiveDocs Middleware:
 
 https://github.com/simonmcmanus/livedocs-middleware
@@ -65,8 +63,9 @@ https://github.com/simonmcmanus/livedocs-middleware
 At the moment the middleware just takes care of validation.
 
 
- Unfortunately IODocs still didn’t do quite what I wanted - This readme outlines the problems with IODocs from my point of view:
+#Verb Mapping
 
+In this example the /routes/food folder uses verb mapping, but the /routes/animals folder does not.
 
 
 
