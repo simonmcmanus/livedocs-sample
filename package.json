@@ -1,0 +1,20 @@
+{
+  "name": "livedocs-sample",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "bin": {
+    "livedocs-sample": "generate-spec.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Simon McManus",
+  "license": "ISC",
+  "dependencies": {
+    "livedocs-middleware": "^0.3.1",
+    "livedocs-route-loader": "^0.2.0",
+    "restify": "^2.8.0"
+  }
+}

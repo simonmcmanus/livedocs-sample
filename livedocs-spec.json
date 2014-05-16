@@ -1,0 +1,115 @@
+{
+    "server": "",
+    "title": "",
+    "prefix": "/api/v1",
+    "endpoints": [
+        {
+            "methods": [
+                {
+                    "name": "Create an asset",
+                    "synopsis": "Create a new AdBank asset.",
+                    "method": "get",
+                    "middleware": [],
+                    "parameters": [
+                        {
+                            "name": "body",
+                            "location": "body",
+                            "type": "json",
+                            "input": "textarea",
+                            "description": "A JSON object."
+                        }
+                    ],
+                    "url": "/animals"
+                }
+            ]
+        },
+        {
+            "methods": [
+                {
+                    "name": "Create an asset",
+                    "synopsis": "Create a new AdBank asset.",
+                    "method": "post",
+                    "url": "/big/fat/beagle",
+                    "middleware": [],
+                    "parameters": [
+                        {
+                            "name": "body",
+                            "location": "body",
+                            "type": "json",
+                            "input": "textarea",
+                            "description": "A JSON object."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "methods": [
+                {
+                    "name": "Create an asset",
+                    "synopsis": "Create a new AdBank asset.",
+                    "middleware": [],
+                    "parameters": [
+                        {
+                            "name": "body",
+                            "location": "body",
+                            "type": "json",
+                            "input": "textarea",
+                            "description": "A JSON object."
+                        }
+                    ],
+                    "method": "POST",
+                    "url": "/food"
+                },
+                {
+                    "name": "Create an asset",
+                    "synopsis": "Create a new AdBank asset.",
+                    "middleware": [],
+                    "parameters": [
+                        {
+                            "name": "body",
+                            "location": "body",
+                            "type": "json",
+                            "input": "textarea",
+                            "description": "A JSON object."
+                        }
+                    ],
+                    "method": "DEL",
+                    "url": "/food"
+                },
+                {
+                    "name": "Create an asset",
+                    "synopsis": "Create a new AdBank asset.",
+                    "middleware": [],
+                    "parameters": [
+                        {
+                            "name": "body",
+                            "location": "body",
+                            "type": "json",
+                            "input": "textarea",
+                            "description": "A JSON object."
+                        }
+                    ],
+                    "method": "GET",
+                    "url": "/food"
+                },
+                {
+                    "name": "Create an asset",
+                    "synopsis": "Create a new AdBank asset.",
+                    "middleware": [],
+                    "parameters": [
+                        {
+                            "name": "body",
+                            "location": "body",
+                            "type": "json",
+                            "input": "textarea",
+                            "description": "A JSON object."
+                        }
+                    ],
+                    "method": "PUT",
+                    "url": "/food"
+                }
+            ]
+        }
+    ]
+}
