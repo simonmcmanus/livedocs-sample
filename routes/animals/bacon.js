@@ -2,16 +2,16 @@
 
 
 module.exports = {
-  name: 'Create an asset',
-  synopsis: 'Create a new AdBank asset.',
+  name: 'GET an asset',
+  synopsis: 'GET an asset by its ID',
   method: 'get',
   middleware: [],
+  url: ':id',
   parameters: [
     {
-      name: 'body',
-      location: 'body',
-      type: 'json',
-      input: 'textarea',
+      name: 'id',
+      location: 'query',
+      type: 'string',
       description: 'A JSON object.'
     }
   ],

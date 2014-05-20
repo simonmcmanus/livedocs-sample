@@ -3,10 +3,6 @@
 This repository provides an example of how to use LiveDocs, LiveDocs Route loader and LiveDocs middleware.
 
 
-
-
-
-
 #Generate the Docs/spec
 
 In this repository we generate the spec using the ./bin/generate-spec file.

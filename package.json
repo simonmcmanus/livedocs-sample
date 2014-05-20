@@ -16,6 +16,8 @@
     "livedocs-middleware": "^0.3.1",
     "livedocs-route-loader": "^0.2.0",
     "restify": "^2.8.0",
-    "livedocs": "^0.3.0"
+    "livedocs": "1.0.0"
   }
 }
+
+
