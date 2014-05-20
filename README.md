@@ -1,26 +1,41 @@
 #LiveDocs Sample
 
-This repository provides an example of how to use LiveDocs, LiveDocs Route loader and LiveDocs middleware together.
+This repository provides an example of how to use LiveDocs, LiveDocs Route loader and LiveDocs middleware.
 
 
+
+
+
+
+#Generate the Docs/spec
+
+In this repository we generate the spec using the ./bin/generate-spec file.
+
+```bash
+  node ./bin/generate-spec
+```
+In this script you may also wish to set the server name, title and fill out any other fields.
+
+
+```bash
+livedocs
+```
 
 ##Background
 
 When building or consuming APIs I often find myself putting together lots of small HTML forms that allow me to GET/PUT/POST data to my api in order to test it.
-On  a recent project one of the requirements was to build an simple API interface in Node. There was already an API in place but the client wanted to make it easier to use by providing better error responses and better documentation. I decided a test harness with inline documentation was a good idea.
+On  a recent project one of the requirements was to build an simple API interface in Node. There was already an API in place but the client wanted to make it easier for consumers by providing better error responses and documentation. I decided to create a test harness with inline documentation.
 
-There are a number of tools which help to generate API documentation, the one that I found that was nearest to my needs was  Masherys IODocs. I started off playing with mashery and making some small changes.
+There are a number of tools which help to generate API documentation, the one that I found that was nearest to my needs was [Masherys IODocs](http://www.mashery.com/product/io-docs). I started playing with IODocs and making some small changes.
 
-I managed to write a small wrapper which allowed me to write all my IODocs inline with my code, I could then run a script that would generate the IODocs spec so that I could keep my doc spec up to date with my code.
 
 This worked but I started coming up against the constraints of IODocs and after seeing a pull request that had been ignored for 2 years I decided it would actually be easier to write my own.
 
 LiveDocs was born.
 
-LiveDocs consists of three main components, each component has it’s own read me.md file which should explain how to use the component, this repository will try to explain how to tie them all together.
+LiveDocs consists of three main components, each component has its own README.md file which explains how to use the component. This repository will try to demonstrate/explain how to tie them all together.
 
 The three components are:
-
 
 #Components
 
@@ -28,11 +43,12 @@ The three components are:
 
 https://github.com/simonmcmanus/livedocs
 
-Given a Live Docs spec file, generate a standalone html file that documents the API and allows users to make requests to it from their browser.
+Given a Live Docs spec file, generate a standalone HTML file that documents the API and allows users to make requests to the API from their browser.
 
-A simple command like:
+The command:
 
   livedocs ./specs/sample.json ./out
+
 Will result in a html file.
 
 You can read all about the spec format here:
@@ -49,10 +65,10 @@ https://a5.adstream.com/api/v1
 
 https://github.com/simonmcmanus/livedocs-routeLoader
 
-The route loader can be used to both automatically generate the spec, and load your routes into your Restify or Express server when your API starts up.  Using the same code for both will reduce errors.
+The route loader can be used to generate the spec but also to load the routes into your Restify or Express server when your API starts up.
 
 
-When using the route loader the URLs are modified slightly before being added to the livedocs spec. You should read these docs:
+When using the route loader the URLs are modified slightly before being added to the livedocs spec. You should read the docs to understand how.
 
 
 
@@ -62,10 +78,12 @@ https://github.com/simonmcmanus/livedocs-middleware
 
 At the moment the middleware just takes care of validation.
 
+So for example if in your spec you specify that a param should be a number in the body, the request will be rejected by the middleware unless the param is present and is a number.
+
+The livedocs middleware is currently loaded onto every request by the route loader.
+
 
 #Verb Mapping
 
 In this example the /routes/food folder uses verb mapping, but the /routes/animals folder does not.
-
-
 
