@@ -16,7 +16,7 @@ module.exports = {
     }
   ],
   action: function(req, res) {
-    res.send('create good item.', req.body);
+    res.send('create good item.', req.params.id);
   }
 };
 

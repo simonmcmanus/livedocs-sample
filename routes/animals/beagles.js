@@ -58,6 +58,6 @@ module.exports = {
     }
   ],
   action: function(req, res) {
-    res.send('create good item.', req.images);
+    res.send('create good item.', req.body.images);
   }
 };
