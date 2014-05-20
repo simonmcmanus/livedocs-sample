@@ -43,9 +43,6 @@ You can read all about the spec format here:
 
 https://github.com/simonmcmanus/livedocs
 
-And here is an example of the markup it produces:
-
-https://a5.adstream.com/api/v1
 
 
 
