@@ -57,6 +57,13 @@ When using the route loader the URLs are modified slightly before being added to
 
 
 
+##Verb Mapping
+
+In this example the /routes/food folder uses verb mapping, but the /routes/animals folder does not.
+
+
+
+
 ## 3.. LiveDocs Middleware:
 
 https://github.com/simonmcmanus/livedocs-middleware
@@ -66,11 +73,6 @@ At the moment the middleware just takes care of validation.
 So for example if in your spec you specify that a param should be a number in the body, the request will be rejected by the middleware unless the param is present and is a number.
 
 The livedocs middleware is currently loaded onto every request by the route loader.
-
-
-#Verb Mapping
-
-In this example the /routes/food folder uses verb mapping, but the /routes/animals folder does not.
 
 
 
