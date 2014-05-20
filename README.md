@@ -3,14 +3,6 @@
 This repository provides an example of how to use LiveDocs, LiveDocs Route loader and LiveDocs middleware.
 
 
-#Generate the Docs/spec
-
-In this repository we generate the spec using the ./bin/generate-spec file.
-
-```bash
-  node ./bin/generate-spec
-```
-In this script you may also wish to set the server name, title and fill out any other fields.
 
 
 ##Background
@@ -78,4 +70,23 @@ The livedocs middleware is currently loaded onto every request by the route load
 #Verb Mapping
 
 In this example the /routes/food folder uses verb mapping, but the /routes/animals folder does not.
+
+
+
+
+#Generate the Docs/spec
+
+In this repository we generate the spec using the ./bin/generate-spec file.
+
+```bash
+  node ./bin/generate-spec
+```
+In this script you may also wish to set the server name, title and fill out any other fields.
+
+Once the spec has been generated in can be turned into LiveDocs HTML file using the command:
+
+```bash
+livedocs ./livedocs-spec.json ./docs
+```
+
 
