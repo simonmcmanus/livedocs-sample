@@ -17,13 +17,9 @@ In this repository we generate the spec using the ./bin/generate-spec file.
 In this script you may also wish to set the server name, title and fill out any other fields.
 
 
-```bash
-livedocs
-```
-
 ##Background
 
-When building or consuming APIs I often find myself putting together lots of small HTML forms that allow me to GET/PUT/POST data to my api in order to test it.
+When building or consuming APIs I often find myself putting together lots of small HTML forms that allow me to GET/PUT/POST data to my API in order to test it.
 On  a recent project one of the requirements was to build an simple API interface in Node. There was already an API in place but the client wanted to make it easier for consumers by providing better error responses and documentation. I decided to create a test harness with inline documentation.
 
 There are a number of tools which help to generate API documentation, the one that I found that was nearest to my needs was [Masherys IODocs](http://www.mashery.com/product/io-docs). I started playing with IODocs and making some small changes.
