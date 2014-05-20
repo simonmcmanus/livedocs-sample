@@ -6,6 +6,8 @@ You can see an example of the html file generated from this repository at:
 
 https://cdn.rawgit.com/simonmcmanus/livedocs-sample/master/docs/v0/index.html
 
+It doesn't point at a real API so you wont see nice responses.
+
 
 ##Background
 
