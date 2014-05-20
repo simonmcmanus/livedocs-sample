@@ -2,7 +2,9 @@
 
 This repository provides an example of how to use LiveDocs, LiveDocs Route loader and LiveDocs middleware.
 
+You can see an example of the html file generated from this repository at: 
 
+https://cdn.rawgit.com/simonmcmanus/livedocs-sample/master/docs/v0/index.html
 
 
 ##Background
