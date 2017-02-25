@@ -1,5 +1,7 @@
 #LiveDocs Sample
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/simonmcmanus/livedocs-sample.svg)](https://greenkeeper.io/)
+
 This repository provides an example of how to use LiveDocs, LiveDocs Route loader and LiveDocs middleware.
 
 You can see an example of the html file generated from this repository at: 
