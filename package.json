@@ -15,8 +15,8 @@
   "dependencies": {
     "livedocs-middleware": "^0.3.1",
     "livedocs-route-loader": "^0.2.0",
-    "restify": "^2.8.0",
-    "livedocs": "1.0.0"
+    "restify": "^4.3.0",
+    "livedocs": "2.1.1"
   }
 }
 
